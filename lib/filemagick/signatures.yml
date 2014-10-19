@@ -25,7 +25,7 @@
     starting:
       offset: 0
       hexcodes:
-        - 'ffd8ffe0xxxx4a46494600'
+        - 'ffd8ffe0....4a46494600'
     trailing:
       offset: 0
       hexcodes:
