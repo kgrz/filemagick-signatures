@@ -25,8 +25,374 @@
     starting:
       offset: 0
       hexcodes:
-        - 'ffd8ffe0XXXX4a46494600'
+        - 'ffd8ffe0xxxx4a46494600'
     trailing:
       offset: 0
       hexcodes:
         - 'ffd9'
+
+- mime: 'image/jpg'
+  extensions:
+    - 'jp2'
+  signatures:
+    trailing:
+      offset: 0
+      hexcodes:
+        - '0000000c6a5020200d0a'
+# add 3gp
+
+# mp4
+#  * iso base media file
+#  * mpeg-4 video file
+- mime: ''
+  extensions:
+    - 'mp4'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '000000146674797069736f6d'
+        - '000000186674797033677035'
+
+# quicktime movie
+- mime: ''
+  extensions:
+    - 'mov'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '000000146674797071742020'
+
+# m4v mpeg-4 video/quicktime file
+- mime: ''
+  extensions:
+    - 'm4v'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '00000018667479706d703432'
+
+# mp4  mpeg-4 video file
+- mime: ''
+  extensions:
+    - 'mp4'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '0000001c667479704d534e56012900464d534e566d703432'
+
+# m4a  apple lossless audio codec file
+- mime: ''
+  extensions:
+    - 'm4a'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '00000020667479704d344120'
+
+# UTF-16
+- mime: ''
+  extensions:
+    - 'txt'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '0000feff'
+
+# True type fonts
+- mime: ''
+  extensions:
+    - 'ttf'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '0001000000'
+
+# MS powerpoint
+- mime: ''
+  extensions:
+    - 'ppt'
+  signatures:
+    starting:
+      offset: 512
+      hexcodes:
+        - '006E1EF0'
+        - '0F00E803'
+
+# DRW file
+- mime: ''
+  extensions:
+    - 'drw'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '07'
+
+# Excel file
+- mime: ''
+  extensions:
+    - 'xls'
+  signatures:
+    starting:
+      offset: 512
+      hexcodes:
+        - '0908100000060500'
+
+# Deskmate document file
+- mime: ''
+  extensions:
+    - 'doc'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '0d444f43'
+
+#  WebM video file
+- mime: ''
+  extensions:
+    - 'webm'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '1a45dfa3'
+
+#  Matroska stream file
+- mime: ''
+  extensions:
+    - 'mkv'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '45dfa3934282886d6174726f736b61'
+
+#  GZIP, VLC skin file
+- mime: ''
+  extensions:
+    - 'gz'
+    - 'tgz'
+    - 'vlt'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '1f8b08'
+
+#  TAR file
+- mime: ''
+  extensions:
+    - 'tar'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '1f9d'
+        - '1fA0'
+
+#  EPS
+- mime: ''
+  extensions:
+    - 'eps'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '252150532d41646f62652d332e3020455053462d332030'
+
+#  PDF
+- mime: ''
+  extensions:
+    - 'pdf'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '38425053'
+
+#  XUL file
+- mime: ''
+  extensions:
+    - 'xul'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '3c3f786d6c2076657273696f6e3d22312e30223f3e'
+
+# Generic AutoCAD drawing
+- mime: ''
+  extensions:
+    - 'dwg'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '41433130'
+
+# VCF vCard file
+- mime: ''
+  extensions:
+    - 'vcf'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '424547494E3A56434152440D0A'
+
+# Bzip
+- mime: ''
+  extensions:
+    - 'bz2'
+    - 'tar.bz2'
+    - 'tbz2'
+    - 'tb2'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '425a68'
+
+# ISO image
+- mime: ''
+  extensions:
+    - 'iso'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '4344303031'
+
+# SWF file
+- mime: ''
+  extensions:
+    - 'swf'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '435753'
+        - '465753'
+
+# GIF
+- mime: ''
+  extensions:
+    - 'gif'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '474946383761'
+        - '474946383961'
+    trailing:
+      offset: 0
+      hexcodes:
+        - '003b'
+
+# TIFF
+- mime: ''
+  extensions:
+    - 'tif'
+    - 'tiff'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '492049'
+        - '49492a00'
+        - '4d4d002a'
+        - '4d4d002b'
+
+# MP3
+- mime: ''
+  extensions:
+    - 'mp3'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '494433'
+
+# DOS executables
+- mime: ''
+  extensions:
+    - 'com'
+    - 'dll'
+    - 'drv'
+    - 'exe'
+    - 'pif'
+    - 'qts'
+    - 'qtx'
+    - 'sys'
+    - 'acm'
+    - 'ax'
+    - 'cpl'
+    - 'fon'
+    - 'ocx'
+    - 'olb'
+    - 'scr'
+    - 'vbx'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '4d5a'
+
+# ZIP
+- mime: ''
+  extensions:
+    - 'zip'
+    - 'jar'
+    - 'kmz'
+    - 'kwd'
+    - 'odt'
+    - 'odp'
+    - 'ott'
+    - 'sxc'
+    - 'sxd'
+    - 'sxi'
+    - 'sxw'
+    - 'sxc'
+    - 'wmz'
+    - 'xpi'
+    - 'xps'
+    - 'xpt'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '504b030414000100630000000000'
+
+# EPUB
+- mime: ''
+  extensions:
+    - 'epub'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '504b03040a000200'
+
+# DOCX
+- mime: ''
+  extensions:
+    - 'docx'
+    - 'pptx'
+    - 'xlsx'
+  signatures:
+    starting:
+      offset: 0
+      hexcodes:
+        - '504b030414000600'
+    trailing:
+      offset: 18
+      hexcodes:
+        - '504b0506'

@@ -1,13 +1,12 @@
-require "filemagick/signatures/version"
 require 'yaml'
 require 'singleton'
 
 module Filemagick
-  module Signatures
-    include ::Singleton
+  class Signatures
 
     SIGNATURES_FILE = ::File.expand_path('../signatures.yml', __FILE__)
     attr_reader :signatures, :known_extensions, :known_mime_types
+    include ::Singleton
 
     def known_mime_types
       read_signatures_file!
