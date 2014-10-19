@@ -1,398 +1,4558 @@
 ---
-- mime: 'application/pdf'
+- description: 1Password 4 Cloud Keychain
+  mimes: []
   extensions:
-    - 'pdf'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '25504446'
-    trailing:
-      offset: 0
-      hexcodes:
-        - '0a2525454f46'
-        - '0a2525454f460a'
-        - '0d0a2525454f460d0a'
-        - '0d2525454f460d'
-
-- mime: 'image/jpeg'
+  - attachment
+  signature:
+    offset: 0
+    hexcodes:
+    - '4f50434c444154'
+- description: 1Password 4 Cloud Keychain encrypted data
+  mimes: []
   extensions:
-    - 'jpg'
-    - 'jpeg'
-    - 'jfif'
-    - 'jpe'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - 'ffd8ffe0....4a46494600'
-    trailing:
-      offset: 0
-      hexcodes:
-        - 'ffd9'
-
-- mime: 'image/jpg'
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '6f70646174613031'
+- description: 3GPP multimedia files
+  mimes:
+  - video/3gpp
   extensions:
-    - 'jp2'
-  signatures:
-    trailing:
-      offset: 0
-      hexcodes:
-        - '0000000c6a5020200d0a'
-# add 3gp
-
-# mp4
-#  * iso base media file
-#  * mpeg-4 video file
-- mime: ''
+  - 3gp
+  signature:
+    offset: 0
+    hexcodes:
+    - '0000001466747970'
+- description: 3GPP2 multimedia files
+  mimes:
+  - video/3gpp
   extensions:
-    - 'mp4'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '000000146674797069736f6d'
-        - '000000186674797033677035'
-
-# quicktime movie
-- mime: ''
+  - 3gp
+  signature:
+    offset: 0
+    hexcodes:
+    - '0000002066747970'
+- description: 4X Movie video
+  mimes: []
   extensions:
-    - 'mov'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '000000146674797071742020'
-
-# m4v mpeg-4 video/quicktime file
-- mime: ''
+  - 4xm
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: 7-Zip compressed file
+  mimes:
+  - application/x-7z-compressed
   extensions:
-    - 'm4v'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '00000018667479706d703432'
-
-# mp4  mpeg-4 video file
-- mime: ''
+  - 7z
+  signature:
+    offset: 0
+    hexcodes:
+    - '377abcaf271c'
+- description: Access Data FTK evidence
+  mimes:
+  - text/plain
   extensions:
-    - 'mp4'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '0000001c667479704d534e56012900464d534e566d703432'
-
-# m4a  apple lossless audio codec file
-- mime: ''
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - 'a90d000000000000'
+- description: Access project file
+  mimes:
+  - audio/adpcm
   extensions:
-    - 'm4a'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '00000020667479704d344120'
-
-# UTF-16
-- mime: ''
+  - adp
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: Acrobat plug-in
+  mimes: []
   extensions:
-    - 'txt'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '0000feff'
-
-# True type fonts
-- mime: ''
+  - api
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a900003000000'
+- description: Acronis True Image
+  mimes: []
   extensions:
-    - 'ttf'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '0001000000'
-
-# MS powerpoint
-- mime: ''
+  - tib
+  signature:
+    offset: 0
+    hexcodes:
+    - 'b46e6844'
+- description: ActiveX|OLE Custom Control
+  mimes: []
   extensions:
-    - 'ppt'
-  signatures:
-    starting:
-      offset: 512
-      hexcodes:
-        - '006E1EF0'
-        - '0F00E803'
-
-# DRW file
-- mime: ''
+  - ocx
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: Adaptive Multi-Rate ACELP Codec (GSM)
+  mimes:
+  - audio/AMR
   extensions:
-    - 'drw'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '07'
-
-# Excel file
-- mime: ''
+  - amr
+  signature:
+    offset: 0
+    hexcodes:
+    - '2321414d52'
+- description: Adobe encapsulated PostScript
+  mimes:
+  - application/postscript
   extensions:
-    - 'xls'
-  signatures:
-    starting:
-      offset: 512
-      hexcodes:
-        - '0908100000060500'
-
-# Deskmate document file
-- mime: ''
+  - eps
+  signature:
+    offset: 0
+    hexcodes:
+    - 'c5d0d3c6'
+- description: Adobe FrameMaker
+  mimes:
+  - application/x-maker
+  - application/vnd.framemaker
+  - application/x-mif
+  - application/vnd.mif
   extensions:
-    - 'doc'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '0d444f43'
-
-#  WebM video file
-- mime: ''
+  - fm
+  - mif
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c4d616b65724669'
+- description: Advanced Stream Redirector
+  mimes:
+  - video/x-ms-asf
   extensions:
-    - 'webm'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '1a45dfa3'
-
-#  Matroska stream file
-- mime: ''
+  - asx
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c'
+- description: Agent newsreader character map
+  mimes:
+  - application/vnd.rim.cod
   extensions:
-    - 'mkv'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '45dfa3934282886d6174726f736b61'
-
-#  GZIP, VLC skin file
-- mime: ''
+  - cod
+  signature:
+    offset: 0
+    hexcodes:
+    - '4e616d653a20'
+- description: AIN Compressed Archive
+  mimes: []
   extensions:
-    - 'gz'
-    - 'tgz'
-    - 'vlt'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '1f8b08'
-
-#  TAR file
-- mime: ''
+  - ain
+  signature:
+    offset: 0
+    hexcodes:
+    - '2112'
+- description: Allegro Generic Packfile (compressed)
+  mimes:
+  - text/plain
   extensions:
-    - 'tar'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '1f9d'
-        - '1fA0'
-
-#  EPS
-- mime: ''
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '736c6821'
+- description: Allegro Generic Packfile (uncompressed)
+  mimes:
+  - text/plain
   extensions:
-    - 'eps'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '252150532d41646f62652d332e3020455053462d332030'
-
-#  PDF
-- mime: ''
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '736c682e'
+- description: Amiga disk file
+  mimes: []
   extensions:
-    - 'pdf'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '38425053'
-
-#  XUL file
-- mime: ''
+  - adf
+  signature:
+    offset: 0
+    hexcodes:
+    - '444f53'
+- description: Amiga DiskMasher compressed archive
+  mimes:
+  - application/octet-stream
   extensions:
-    - 'xul'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '3c3f786d6c2076657273696f6e3d22312e30223f3e'
-
-# Generic AutoCAD drawing
-- mime: ''
+  - dms
+  signature:
+    offset: 0
+    hexcodes:
+    - '444d5321'
+- description: Amiga icon
+  mimes: []
   extensions:
-    - 'dwg'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '41433130'
-
-# VCF vCard file
-- mime: ''
+  - info
+  signature:
+    offset: 0
+    hexcodes:
+    - 'e310000100000000'
+- description: Antenna data file
+  mimes: []
   extensions:
-    - 'vcf'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '424547494E3A56434152440D0A'
-
-# Bzip
-- mime: ''
+  - ad
+  signature:
+    offset: 0
+    hexcodes:
+    - '5245564e554d3a2c'
+- description: AOL address book
+  mimes: []
   extensions:
-    - 'bz2'
-    - 'tar.bz2'
-    - 'tbz2'
-    - 'tb2'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '425a68'
-
-# ISO image
-- mime: ''
+  - aby
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c4442'
+- description: AOL address book index
+  mimes: []
   extensions:
-    - 'iso'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '4344303031'
-
-# SWF file
-- mime: ''
+  - abi
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c494e444558'
+- description: AOL and AIM buddy list
+  mimes: []
   extensions:
-    - 'swf'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '435753'
-        - '465753'
-
-# GIF
-- mime: ''
+  - bag
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c2046656564'
+- description: AOL ART file_1
+  mimes: []
   extensions:
-    - 'gif'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '474946383761'
-        - '474946383961'
-    trailing:
-      offset: 0
-      hexcodes:
-        - '003b'
-
-# TIFF
-- mime: ''
+  - jg
+  signature:
+    offset: 0
+    hexcodes:
+    - '4a47030e'
+- description: AOL ART file_2
+  mimes: []
   extensions:
-    - 'tif'
-    - 'tiff'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '492049'
-        - '49492a00'
-        - '4d4d002a'
-        - '4d4d002b'
-
-# MP3
-- mime: ''
+  - jg
+  signature:
+    offset: 0
+    hexcodes:
+    - '4a47040e'
+- description: AOL client preferences|settings file
+  mimes: []
   extensions:
-    - 'mp3'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '494433'
-
-# DOS executables
-- mime: ''
+  - ind
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c494458'
+- description: AOL config files
+  mimes: []
   extensions:
-    - 'com'
-    - 'dll'
-    - 'drv'
-    - 'exe'
-    - 'pif'
-    - 'qts'
-    - 'qtx'
-    - 'sys'
-    - 'acm'
-    - 'ax'
-    - 'cpl'
-    - 'fon'
-    - 'ocx'
-    - 'olb'
-    - 'scr'
-    - 'vbx'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '4d5a'
-
-# ZIP
-- mime: ''
+  - abi
+  - aby
+  - bag
+  - idx
+  - ind
+  - pfc
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c'
+- description: AOL history|typed URL files
+  mimes: []
   extensions:
-    - 'zip'
-    - 'jar'
-    - 'kmz'
-    - 'kwd'
-    - 'odt'
-    - 'odp'
-    - 'ott'
-    - 'sxc'
-    - 'sxd'
-    - 'sxi'
-    - 'sxw'
-    - 'sxc'
-    - 'wmz'
-    - 'xpi'
-    - 'xps'
-    - 'xpt'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '504b030414000100630000000000'
-
-# EPUB
-- mime: ''
+  - arl
+  - aut
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd42a'
+- description: AOL HTML mail
+  mimes: []
   extensions:
-    - 'epub'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '504b03040a000200'
-
-# DOCX
-- mime: ''
+  - dci
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c21646f63747970'
+- description: AOL parameter|info files
+  mimes: []
   extensions:
-    - 'docx'
-    - 'pptx'
-    - 'xlsx'
-  signatures:
-    starting:
-      offset: 0
-      hexcodes:
-        - '504b030414000600'
-    trailing:
-      offset: 18
-      hexcodes:
-        - '504b0506'
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '41435344'
+- description: AOL personal file cabinet
+  mimes:
+  - application/vnd.lotus-organizer
+  extensions:
+  - org
+  - pfc
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c564d313030'
+- description: AOL user configuration
+  mimes: []
+  extensions:
+  - idx
+  signature:
+    offset: 0
+    hexcodes:
+    - '414f4c4442'
+- description: Apple audio and video
+  mimes:
+  - audio/MP4A-LATM
+  extensions:
+  - m4a
+  signature:
+    offset: 0
+    hexcodes:
+    - '00000020667479704d3441'
+- description: Apple Core Audio File
+  mimes:
+  - audio/x-caf
+  extensions:
+  - caf
+  signature:
+    offset: 0
+    hexcodes:
+    - '63616666'
+- description: Apple Lossless Audio Codec file
+  mimes:
+  - audio/MP4A-LATM
+  extensions:
+  - m4a
+  signature:
+    offset: 4
+    hexcodes:
+    - '667479704d344120'
+- description: Approach index file
+  mimes: []
+  extensions:
+  - adx
+  signature:
+    offset: 0
+    hexcodes:
+    - '0300000041505052'
+- description: Audacity audio file
+  mimes:
+  - audio/basic
+  extensions:
+  - au
+  signature:
+    offset: 0
+    hexcodes:
+    - '646e732e'
+- description: Audio Interchange File
+  mimes:
+  - audio/x-aiff
+  extensions:
+  - aiff
+  signature:
+    offset: 0
+    hexcodes:
+    - '464f524d00'
+- description: Audition graphic filter
+  mimes: []
+  extensions:
+  - flt
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a900003000000'
+- description: AVG6 Integrity database
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '415647365f496e74'
+- description: BASE85 file
+  mimes: []
+  extensions:
+  - b85
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c7e363c5c255f30675371683b'
+- description: BGBlitz position database file
+  mimes:
+  - application/vnd.palm
+  - x-chemical/x-pdb
+  - chemical/x-pdb
+  extensions:
+  - pdb
+  signature:
+    offset: 0
+    hexcodes:
+    - 'aced000573720012'
+- description: Binary property list (plist)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '62706c697374'
+- description: BinHex 4 Compressed Archive
+  mimes:
+  - application/mac-binhex40
+  extensions:
+  - hqx
+  signature:
+    offset: 0
+    hexcodes:
+    - '2854686973206669'
+- description: BIOS details in RAM
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '001400000102'
+- description: Bitcoin-Qt blockchain block file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - 'f9beb4d9'
+- description: BitLocker boot sector (Vista)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'eb52902d4656452d'
+- description: BitLocker boot sector (Win7)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'eb58902d4656452d'
+- description: Bitmap image
+  mimes:
+  - image/x-bmp
+  - image/bmp
+  extensions:
+  - bmp
+  - dib
+  signature:
+    offset: 0
+    hexcodes:
+    - '424d'
+- description: BizTalk XML-Data Reduced Schema
+  mimes: []
+  extensions:
+  - xdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c'
+- description: Blink compressed archive
+  mimes: []
+  extensions:
+  - bli
+  signature:
+    offset: 0
+    hexcodes:
+    - '426c696e6b'
+- description: bzip2 compressed archive
+  mimes:
+  - application/x-bzip2
+  - application/x-gtar
+  extensions:
+  - bz2
+  - tar.bz2
+  - tbz2
+  - tb2
+  signature:
+    offset: 0
+    hexcodes:
+    - '425a68'
+- description: Calculux Indoor lighting project file
+  mimes: []
+  extensions:
+  - cin
+  signature:
+    offset: 0
+    hexcodes:
+    - '43616c63756c757820496e646f6f7220'
+- description: CALS raster bitmap
+  mimes: []
+  extensions:
+  - cal
+  signature:
+    offset: 0
+    hexcodes:
+    - '737263646f636964'
+- description: Canon RAW file
+  mimes: []
+  extensions:
+  - crw
+  signature:
+    offset: 0
+    hexcodes:
+    - '49491a0000004845'
+- description: CaseWare Working Papers
+  mimes: []
+  extensions:
+  - ac_
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: CD Stomper Pro label file
+  mimes: []
+  extensions:
+  - dsn
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d56'
+- description: Cerius2 file
+  mimes:
+  - application/x-msdownload
+  extensions:
+  - msi
+  signature:
+    offset: 0
+    hexcodes:
+    - '2320'
+- description: ChromaGraph Graphics Card Bitmap
+  mimes: []
+  extensions:
+  - img
+  signature:
+    offset: 0
+    hexcodes:
+    - '504943540008'
+- description: COM+ Catalog
+  mimes: []
+  extensions:
+  - clb
+  signature:
+    offset: 0
+    hexcodes:
+    - '434f4d2b'
+- description: Compressed archive file
+  mimes: []
+  extensions:
+  - arj
+  signature:
+    offset: 0
+    hexcodes:
+    - '60ea'
+- description: Compressed archive file
+  mimes: []
+  extensions:
+  - pak
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a0b'
+- description: Compressed archive
+  mimes:
+  - application/x-lzh-compressed
+  - application/octet-stream
+  extensions:
+  - lha
+  - lzh
+  signature:
+    offset: 2
+    hexcodes:
+    - '2d6c68'
+- description: Compressed ISO CD image
+  mimes: []
+  extensions:
+  - cso
+  signature:
+    offset: 0
+    hexcodes:
+    - '4349534f'
+- description: Compressed tape archive_1
+  mimes:
+  - application/x-compress
+  - application/x-compressed
+  extensions:
+  - tar.z
+  signature:
+    offset: 0
+    hexcodes:
+    - '1f9d90'
+- description: Compressed tape archive_2
+  mimes:
+  - application/x-compress
+  - application/x-compressed
+  extensions:
+  - tar.z
+  signature:
+    offset: 0
+    hexcodes:
+    - '1fa0'
+- description: Control panel application
+  mimes: []
+  extensions:
+  - cpl
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: Corel Binary metafile
+  mimes: []
+  extensions:
+  - clb
+  signature:
+    offset: 0
+    hexcodes:
+    - '434d5831'
+- description: Corel color palette
+  mimes: []
+  extensions:
+  - cpl
+  signature:
+    offset: 0
+    hexcodes:
+    - 'dcdc'
+- description: Corel Paint Shop Pro image
+  mimes:
+  - image/x-paintshoppro
+  extensions:
+  - psp
+  signature:
+    offset: 0
+    hexcodes:
+    - '7e424b00'
+- description: Corel Photopaint file_1
+  mimes:
+  - application/x-mac-compactpro
+  - application/mac-compactpro
+  extensions:
+  - cpt
+  signature:
+    offset: 0
+    hexcodes:
+    - '4350543746494c45'
+- description: Corel Photopaint file_2
+  mimes:
+  - application/x-mac-compactpro
+  - application/mac-compactpro
+  extensions:
+  - cpt
+  signature:
+    offset: 0
+    hexcodes:
+    - '43505446494c45'
+- description: Corel Presentation Exchange metadata
+  mimes:
+  - image/x-cmx
+  extensions:
+  - cmx
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: CorelDraw document
+  mimes: []
+  extensions:
+  - cdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: cpio archive
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '3037303730'
+- description: Crush compressed archive
+  mimes: []
+  extensions:
+  - cru
+  signature:
+    offset: 0
+    hexcodes:
+    - '43525553482076'
+- description: DAKX Compressed Audio
+  mimes: []
+  extensions:
+  - dax
+  signature:
+    offset: 0
+    hexcodes:
+    - '464f524d00'
+- description: Dalvik (Android) executable file
+  mimes: []
+  extensions:
+  - dex
+  signature:
+    offset: 0
+    hexcodes:
+    - '6465780a'
+- description: DAX Compressed CD image
+  mimes: []
+  extensions:
+  - dax
+  signature:
+    offset: 0
+    hexcodes:
+    - '44415800'
+- description: DB2 conversion file
+  mimes: []
+  extensions:
+  - cnv
+  signature:
+    offset: 0
+    hexcodes:
+    - '53514c4f434f4e56'
+- description: dBASE III file
+  mimes: []
+  extensions:
+  - db3
+  signature:
+    offset: 0
+    hexcodes:
+    - '3'
+- description: dBASE IV file
+  mimes: []
+  extensions:
+  - db4
+  signature:
+    offset: 0
+    hexcodes:
+    - '4'
+- description: dBASE IV or dBFast configuration file
+  mimes: []
+  extensions:
+  - db
+  signature:
+    offset: 0
+    hexcodes:
+    - '08'
+- description: DesignTools 2D Design file
+  mimes:
+  - application/xml-dtd
+  - text/xml
+  extensions:
+  - dtd
+  signature:
+    offset: 0
+    hexcodes:
+    - '0764743264647464'
+- description: DeskMate Document
+  mimes:
+  - application/msword
+  - application/x-msword
+  - application/word
+  - application/x-word
+  - text/plain
+  extensions:
+  - doc
+  signature:
+    offset: 0
+    hexcodes:
+    - '0d444f43'
+- description: DeskMate Worksheet
+  mimes:
+  - application/lotus-123
+  - application/x-lotus-123
+  - application/vnd.lotus-1-2-3
+  - application/vnd.ms-works
+  extensions:
+  - wks
+  signature:
+    offset: 0
+    hexcodes:
+    - '0e574b53'
+- description: Developer Studio File Options file
+  mimes: []
+  extensions:
+  - opt
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: Developer Studio subheader
+  mimes: []
+  extensions:
+  - opt
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff20'
+- description: Dial-up networking file
+  mimes: []
+  extensions:
+  - dun
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b50686f6e655d'
+- description: Digital Speech Standard file
+  mimes: []
+  extensions:
+  - dss
+  signature:
+    offset: 0
+    hexcodes:
+    - '02647373'
+- description: Digital Watchdog DW-TP-500G audio
+  mimes: []
+  extensions:
+  - img
+  signature:
+    offset: 0
+    hexcodes:
+    - '7e742c015070024d52'
+- description: DirectShow filter
+  mimes: []
+  extensions:
+  - ax
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a900003000000'
+- description: DOS system driver
+  mimes: []
+  extensions:
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ffffffff'
+- description: Dreamcast audio
+  mimes: []
+  extensions:
+  - adx
+  signature:
+    offset: 0
+    hexcodes:
+    - '80000020031204'
+- description: DVD info file
+  mimes: []
+  extensions:
+  - ifo
+  signature:
+    offset: 0
+    hexcodes:
+    - '445644'
+- description: DVD video file
+  mimes:
+  - video/mpeg
+  - video/x-ms-vob
+  extensions:
+  - mpg
+  - vob
+  signature:
+    offset: 0
+    hexcodes:
+    - '000001ba'
+- description: DVR-Studio stream file
+  mimes: []
+  extensions:
+  - dvr
+  signature:
+    offset: 0
+    hexcodes:
+    - '445644'
+- description: Easy CD Creator 5 Layout file
+  mimes: []
+  extensions:
+  - cl5
+  signature:
+    offset: 0
+    hexcodes:
+    - '10000000'
+- description: EasyRecovery Saved State file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '4552465353415645'
+- description: eFax file
+  mimes: []
+  extensions:
+  - efx
+  signature:
+    offset: 0
+    hexcodes:
+    - 'dcfe'
+- description: ELF executable
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '7f454c46'
+- description: Elite Plus Commander game file
+  mimes: []
+  extensions:
+  - cdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '454c49544520436f'
+- description: Encapsulated PostScript file
+  mimes:
+  - application/postscript
+  extensions:
+  - eps
+  signature:
+    offset: 0
+    hexcodes:
+    - '252150532d41646f'
+- description: EnCase case file
+  mimes: []
+  extensions:
+  - cas
+  - cbk
+  signature:
+    offset: 0
+    hexcodes:
+    - '5f434153455f'
+- description: EnCase Evidence File Format V2
+  mimes: []
+  extensions:
+  - ex01
+  signature:
+    offset: 0
+    hexcodes:
+    - '455646320d0a81'
+- description: EndNote Library File
+  mimes: []
+  extensions:
+  - enl
+  signature:
+    offset: 32
+    hexcodes:
+    - '40404020000040404040'
+- description: eXact Packager Models
+  mimes: []
+  extensions:
+  - xpt
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: Excel spreadsheet subheader_1
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - '0908100000060500'
+- description: Excel spreadsheet subheader_2
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff10'
+- description: Excel spreadsheet subheader_3
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff1f'
+- description: Excel spreadsheet subheader_4
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff22'
+- description: Excel spreadsheet subheader_5
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff23'
+- description: Excel spreadsheet subheader_6
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff28'
+- description: Excel spreadsheet subheader_7
+  mimes:
+  - application/excel
+  - application/vnd.ms-excel
+  extensions:
+  - xls
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff29'
+- description: Exchange e-mail
+  mimes:
+  - message/rfc822
+  extensions:
+  - eml
+  signature:
+    offset: 0
+    hexcodes:
+    - '582d'
+- description: Expert Witness Compression Format
+  mimes: []
+  extensions:
+  - e01
+  signature:
+    offset: 0
+    hexcodes:
+    - '455646090d0aff00'
+- description: Extended tcpdump (libpcap) capture file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'a1b2cd34'
+- description: eXtensible ARchive file
+  mimes:
+  - application/vnd.xara
+  extensions:
+  - xar
+  signature:
+    offset: 0
+    hexcodes:
+    - '78617221'
+- description: FAT12 File Allocation Table
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'f0ffff'
+- description: FAT16 File Allocation Table
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'f8ffffff'
+- description: FAT32 File Allocation Table_1
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'f8ffff0fffffff0f'
+- description: FAT32 File Allocation Table_2
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'f8ffff0fffffffff'
+- description: Fiasco database definition file
+  mimes: []
+  extensions:
+  - fdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4644424800'
+- description: Firebird and Interbase database files
+  mimes: []
+  extensions:
+  - fdb
+  - gdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '01003930'
+- description: Flash video file
+  mimes:
+  - video/x-flv
+  extensions:
+  - flv
+  signature:
+    offset: 0
+    hexcodes:
+    - '464c56'
+- description: Flexible Image Transport System (FITS) file
+  mimes: []
+  extensions:
+  - fits
+  signature:
+    offset: 0
+    hexcodes:
+    - '53494d504c4520203d202020202020202020202020202020202020202054'
+- description: FLIC animation
+  mimes:
+  - video/x-fli
+  extensions:
+  - fli
+  signature:
+    offset: 0
+    hexcodes:
+    - '0011'
+- description: Flight Simulator Aircraft Configuration
+  mimes: []
+  extensions:
+  - cfg
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b666c7473696d2e'
+- description: Font file
+  mimes: []
+  extensions:
+  - fon
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: Free Lossless Audio Codec file
+  mimes:
+  - audio/x-flac
+  extensions:
+  - flac
+  signature:
+    offset: 0
+    hexcodes:
+    - '664c614300000022'
+- description: FreeArc compressed file
+  mimes:
+  - application/x-freearc
+  extensions:
+  - arc
+  signature:
+    offset: 0
+    hexcodes:
+    - '41724301'
+- description: Fuzzy bitmap (FBM) file
+  mimes: []
+  extensions:
+  - fbm
+  signature:
+    offset: 0
+    hexcodes:
+    - '256269746d6170'
+- description: GEM Raster file
+  mimes: []
+  extensions:
+  - img
+  signature:
+    offset: 0
+    hexcodes:
+    - 'eb3c902a'
+- description: Generic AutoCAD drawing
+  mimes:
+  - image/vnd.dwg
+  extensions:
+  - dwg
+  signature:
+    offset: 0
+    hexcodes:
+    - '41433130'
+- description: Generic drawing programs
+  mimes: []
+  extensions:
+  - drw
+  signature:
+    offset: 0
+    hexcodes:
+    - '7'
+- description: Generic e-mail_1
+  mimes:
+  - message/rfc822
+  extensions:
+  - eml
+  signature:
+    offset: 0
+    hexcodes:
+    - '52657475726e2d50'
+- description: Generic e-mail_2
+  mimes:
+  - message/rfc822
+  extensions:
+  - eml
+  signature:
+    offset: 0
+    hexcodes:
+    - '46726f6d'
+- description: Genetec video archive
+  mimes: []
+  extensions:
+  - g64
+  signature:
+    offset: 0
+    hexcodes:
+    - '47656e65746563204f6d6e6963617374'
+- description: GIF file
+  mimes:
+  - image/gif
+  extensions:
+  - gif
+  signature:
+    offset: 0
+    hexcodes:
+    - '47494638'
+- description: GIMP file
+  mimes:
+  - image/x-xcf
+  extensions:
+  - xcf
+  signature:
+    offset: 0
+    hexcodes:
+    - '67696d7020786366'
+- description: GIMP pattern file
+  mimes: []
+  extensions:
+  - pat
+  signature:
+    offset: 0
+    hexcodes:
+    - '47504154'
+- description: GNU Info Reader file
+  mimes: []
+  extensions:
+  - info
+  signature:
+    offset: 0
+    hexcodes:
+    - '5468697320697320'
+- description: Google Earth session file
+  mimes:
+  - application/vnd.google-earth.kmz
+  extensions:
+  - kmz
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: GPG public keyring
+  mimes: []
+  extensions:
+  - gpg
+  signature:
+    offset: 0
+    hexcodes:
+    - '99'
+- description: GZIP archive file
+  mimes:
+  - application/gzip
+  - application/x-gzip
+  extensions:
+  - gz
+  signature:
+    offset: 0
+    hexcodes:
+    - '1f8b08'
+- description: Hamarsoft compressed archive
+  mimes: []
+  extensions:
+  - hap
+  signature:
+    offset: 0
+    hexcodes:
+    - '91334846'
+- description: Harvard Graphics presentation file
+  mimes: []
+  extensions:
+  - sh3
+  signature:
+    offset: 0
+    hexcodes:
+    - '4848474231'
+- description: Harvard Graphics presentation
+  mimes: []
+  extensions:
+  - shw
+  signature:
+    offset: 0
+    hexcodes:
+    - '53484f57'
+- description: Harvard Graphics symbol graphic
+  mimes: []
+  extensions:
+  - syw
+  signature:
+    offset: 0
+    hexcodes:
+    - '414d594f'
+- description: IE History file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '436c69656e742055'
+- description: Img Software Bitmap
+  mimes: []
+  extensions:
+  - img
+  signature:
+    offset: 0
+    hexcodes:
+    - '53434d49'
+- description: INFO2 Windows recycle bin_1
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '04000000'
+- description: INFO2 Windows recycle bin_2
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '05000000'
+- description: Inno Setup Uninstall Log
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '496e6e6f20536574'
+- description: Install Shield compressed file
+  mimes:
+  - application/vnd.ms-cab-compressed
+  extensions:
+  - cab
+  - hdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '49536328'
+- description: Intel PROset|Wireless Profile
+  mimes:
+  - application/pkcs10
+  extensions:
+  - p10
+  signature:
+    offset: 0
+    hexcodes:
+    - '64000000'
+- description: Inter@ctive Pager Backup (BlackBerry file
+  mimes: []
+  extensions:
+  - ipd
+  signature:
+    offset: 0
+    hexcodes:
+    - '496e7465724063746976652050616765'
+- description: ISO Base Media file (MPEG-4) v1
+  mimes:
+  - application/mp4
+  - audio/mp4
+  - video/mp4
+  - video/vnd.objectvideo
+  extensions:
+  - mp4
+  signature:
+    offset: 4
+    hexcodes:
+    - '6674797069736f6d'
+- description: ISO-9660 CD Disc Image
+  mimes:
+  - application/x-iso9660-image
+  extensions:
+  - iso
+  signature:
+    offset: 0
+    hexcodes:
+    - '4344303031'
+- description: Jar archive
+  mimes:
+  - application/java-archive
+  - application/x-java-archive
+  extensions:
+  - jar
+  signature:
+    offset: 0
+    hexcodes:
+    - '5f27a889'
+- description: JARCS compressed archive
+  mimes:
+  - application/java-archive
+  - application/x-java-archive
+  extensions:
+  - jar
+  signature:
+    offset: 0
+    hexcodes:
+    - '4a4152435300'
+- description: Java archive_1
+  mimes:
+  - application/java-archive
+  - application/x-java-archive
+  extensions:
+  - jar
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: Java archive_2
+  mimes:
+  - application/java-archive
+  - application/x-java-archive
+  extensions:
+  - jar
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b030414000800'
+- description: Java bytecode
+  mimes:
+  - application/java-vm
+  - application/x-java-vm
+  - application/octet-stream
+  extensions:
+  - class
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cafebabe'
+- description: Java Cryptography Extension keystore
+  mimes: []
+  extensions:
+  - jceks
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cececece'
+- description: Java serialization data
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'aced'
+- description: JavaKeyStore
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'feedfeed'
+- description: JBOG2 image file
+  mimes: []
+  extensions:
+  - jb2
+  signature:
+    offset: 0
+    hexcodes:
+    - '974a42320d0a1a0a'
+- description: Jeppesen FliteLog file
+  mimes: []
+  extensions:
+  - lbk
+  signature:
+    offset: 0
+    hexcodes:
+    - 'c8007900'
+- description: JPEG2000 image files
+  mimes:
+  - image/jp2
+  extensions:
+  - jp2
+  signature:
+    offset: 0
+    hexcodes:
+    - '0000000c6a502020'
+- description: JPEG|EXIF|SPIFF images
+  mimes:
+  - image/jpeg
+  extensions:
+  - jfif
+  - jpe
+  - jpeg
+  - jpg
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ffd8ff'
+- description: Keyboard driver file
+  mimes: []
+  extensions:
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ff4b455942202020'
+- description: KGB archive
+  mimes: []
+  extensions:
+  - kgb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4b47425f61726368'
+- description: Kodak Cineon image
+  mimes: []
+  extensions:
+  - cin
+  signature:
+    offset: 0
+    hexcodes:
+    - '802a5fd7'
+- description: KWAJ (compressed) file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '4b57414a88f027d1'
+- description: KWord document
+  mimes:
+  - application/vnd.kde.kword
+  extensions:
+  - kwd
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: LH archive (old vers.|type 1)
+  mimes:
+  - application/x-freearc
+  extensions:
+  - arc
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a02'
+- description: LH archive (old vers.|type 2)
+  mimes:
+  - application/x-freearc
+  extensions:
+  - arc
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a03'
+- description: LH archive (old vers.|type 3)
+  mimes:
+  - application/x-freearc
+  extensions:
+  - arc
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a04'
+- description: LH archive (old vers.|type 4)
+  mimes:
+  - application/x-freearc
+  extensions:
+  - arc
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a08'
+- description: LH archive (old vers.|type 5)
+  mimes:
+  - application/x-freearc
+  extensions:
+  - arc
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a09'
+- description: Library cache file
+  mimes: []
+  extensions:
+  - ax
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: Logical File Evidence Format
+  mimes: []
+  extensions:
+  - e01
+  signature:
+    offset: 0
+    hexcodes:
+    - '4c5646090d0aff00'
+- description: Lotus 1-2-3 (v1)
+  mimes: []
+  extensions:
+  - wk1
+  signature:
+    offset: 0
+    hexcodes:
+    - '0000020006040600'
+- description: Lotus 1-2-3 (v3)
+  mimes: []
+  extensions:
+  - wk3
+  signature:
+    offset: 0
+    hexcodes:
+    - '00001a0000100400'
+- description: Lotus 1-2-3 (v4|v5)
+  mimes: []
+  extensions:
+  - wk4
+  - wk5
+  signature:
+    offset: 0
+    hexcodes:
+    - '00001a0002100400'
+- description: Lotus 1-2-3 (v9)
+  mimes:
+  - application/vnd.lotus-1-2-3
+  extensions:
+  - '123'
+  signature:
+    offset: 0
+    hexcodes:
+    - '00001a00051004'
+- description: Lotus AMI Pro document_1
+  mimes: []
+  extensions:
+  - sam
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b5645525d'
+- description: Lotus AMI Pro document_2
+  mimes: []
+  extensions:
+  - sam
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b7665725d'
+- description: Lotus Notes database
+  mimes:
+  - application/vnd.lotus-notes
+  extensions:
+  - nsf
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a0000040000'
+- description: Lotus Notes database template
+  mimes:
+  - application/vnd.nitf
+  extensions:
+  - ntf
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a0000'
+- description: Lotus WordPro file
+  mimes:
+  - application/vnd.lotus-wordpro
+  extensions:
+  - lwp
+  signature:
+    offset: 0
+    hexcodes:
+    - '576f726450726f'
+- description: Lotus|IBM Approach 97 file
+  mimes:
+  - application/vnd.lotus-approach
+  extensions:
+  - apr
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: MacOS X Dashboard Widget
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: MacOS X image file
+  mimes:
+  - application/x-apple-diskimage
+  extensions:
+  - dmg
+  signature:
+    offset: 0
+    hexcodes:
+    - '7801730d626260'
+- description: MapInfo Interchange Format file
+  mimes:
+  - application/x-mif
+  - application/vnd.mif
+  extensions:
+  - mif
+  signature:
+    offset: 0
+    hexcodes:
+    - '56657273696f6e20'
+- description: MapInfo Native Data Format
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '3'
+- description: MapInfo Sea Chart
+  mimes: []
+  extensions:
+  - bsb
+  signature:
+    offset: 0
+    hexcodes:
+    - '21'
+- description: MAr compressed archive
+  mimes:
+  - application/octet-stream
+  extensions:
+  - mar
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d41723000'
+- description: Matroska stream file
+  mimes:
+  - video/x-matroska
+  extensions:
+  - mkv
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a45dfa393428288'
+- description: Mbox table of contents file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '000dbba0'
+- description: Merriam-Webster Pocket Dictionary
+  mimes:
+  - application/vnd.palm
+  - x-chemical/x-pdb
+  - chemical/x-pdb
+  extensions:
+  - pdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d2d5720506f636b'
+- description: Micrografx Designer graphic
+  mimes: []
+  extensions:
+  - ds4
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: Micrografx vector graphic file
+  mimes: []
+  extensions:
+  - drw
+  signature:
+    offset: 0
+    hexcodes:
+    - '01ff02040302'
+- description: Microsoft Access 2007
+  mimes: []
+  extensions:
+  - accdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '000100005374616e6461726420414345204442'
+- description: Microsoft Access
+  mimes:
+  - application/access
+  - application/x-access
+  - application/x-msaccess
+  extensions:
+  - mdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '000100005374616e64617264204a6574204442'
+- description: Microsoft cabinet file
+  mimes:
+  - application/vnd.ms-cab-compressed
+  extensions:
+  - cab
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d534346'
+- description: Microsoft Code Page Translation file
+  mimes: []
+  extensions:
+  - cpx
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b57696e646f7773'
+- description: Microsoft Common Console Document
+  mimes: []
+  extensions:
+  - msc
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: Microsoft Installer package
+  mimes:
+  - application/x-msdownload
+  extensions:
+  - msi
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: Microsoft Money file
+  mimes:
+  - application/x-msmoney
+  extensions:
+  - mny
+  signature:
+    offset: 0
+    hexcodes:
+    - '000100004d534953414d204461746162617365'
+- description: Microsoft Office document
+  mimes:
+  - application/msword
+  - application/x-msword
+  - application/word
+  - application/x-word
+  - text/plain
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  - application/vnd.ms-excel
+  - application/excel
+  extensions:
+  - doc
+  - dot
+  - pps
+  - ppt
+  - xla
+  - xls
+  - wiz
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: Microsoft Windows Imaging Format
+  mimes: []
+  extensions:
+  - wim
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5357494d'
+- description: Microsoft Windows User State Migration Tool
+  mimes: []
+  extensions:
+  - pmoccmoc
+  signature:
+    offset: 0
+    hexcodes:
+    - '504d4f43434d4f43'
+- description: Microsoft|MSN MARC archive
+  mimes:
+  - application/octet-stream
+  extensions:
+  - mar
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d415243'
+- description: MIDI sound file
+  mimes:
+  - audio/midi
+  - audio/x-midi
+  extensions:
+  - mid
+  - midi
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d546864'
+- description: Milestones project management file
+  mimes: []
+  extensions:
+  - mls
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d494c4553'
+- description: Milestones project management file_1
+  mimes: []
+  extensions:
+  - mls
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d56323134'
+- description: Milestones project management file_2
+  mimes: []
+  extensions:
+  - mls
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d563243'
+- description: Minitab data file
+  mimes: []
+  extensions:
+  - mtw
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: MMC Snap-in Control file
+  mimes: []
+  extensions:
+  - msc
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c3f786d6c2076657273696f6e3d22312e30223f3e0d0a3c4d4d435f436f6e736f6c6546696c6520436f6e736f6c6556657273696f6e3d22'
+- description: Monochrome Picture TIFF bitmap
+  mimes: []
+  extensions:
+  - mp
+  signature:
+    offset: 0
+    hexcodes:
+    - '0ced'
+- description: Mozilla archive
+  mimes:
+  - application/octet-stream
+  extensions:
+  - mar
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d41523100'
+- description: Mozilla Browser Archive
+  mimes:
+  - application/x-xpinstall
+  extensions:
+  - xpi
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: MP3 audio file
+  mimes:
+  - audio/mpeg
+  extensions:
+  - mp3
+  signature:
+    offset: 0
+    hexcodes:
+    - '494433'
+- description: MPEG video file
+  mimes:
+  - video/mpeg
+  extensions:
+  - mpg
+  signature:
+    offset: 0
+    hexcodes:
+    - '000001b3'
+- description: MPEG-2 AAC audio
+  mimes:
+  - audio/x-aac
+  extensions:
+  - aac
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fff9'
+- description: MPEG-4 AAC audio
+  mimes:
+  - audio/x-aac
+  extensions:
+  - aac
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fff1'
+- description: MPEG-4 v1
+  mimes:
+  - application/mp4
+  - audio/mp4
+  - video/mp4
+  - video/vnd.objectvideo
+  extensions:
+  - mp4
+  signature:
+    offset: 0
+    hexcodes:
+    - '000000146674797069736f6d'
+- description: MPEG-4 video file_1
+  mimes:
+  - application/mp4
+  - audio/mp4
+  - video/mp4
+  - video/vnd.objectvideo
+  extensions:
+  - mp4
+  signature:
+    offset: 4
+    hexcodes:
+    - '6674797033677035'
+- description: MPEG-4 video file_2
+  mimes:
+  - application/mp4
+  - audio/mp4
+  - video/mp4
+  - video/vnd.objectvideo
+  extensions:
+  - mp4
+  signature:
+    offset: 4
+    hexcodes:
+    - '667479704d534e56'
+- description: MPEG-4 video_1
+  mimes:
+  - video/x-m4v
+  - video/vnd.objectvideo
+  - application/mp4
+  - audio/mp4
+  - video/mp4
+  extensions:
+  - 3gp5
+  - m4v
+  - mp4
+  signature:
+    offset: 0
+    hexcodes:
+    - '0000001866747970'
+- description: MPEG-4 video_2
+  mimes:
+  - application/mp4
+  - audio/mp4
+  - video/mp4
+  - video/vnd.objectvideo
+  extensions:
+  - mp4
+  signature:
+    offset: 0
+    hexcodes:
+    - '0000001c66747970'
+- description: MPEG-4 video|QuickTime file
+  mimes:
+  - video/x-m4v
+  - video/vnd.objectvideo
+  extensions:
+  - m4v
+  signature:
+    offset: 4
+    hexcodes:
+    - '667479706d703432'
+- description: MS Access Snapshot Viewer file
+  mimes: []
+  extensions:
+  - snp
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d534346'
+- description: MS Agent Character file
+  mimes: []
+  extensions:
+  - acs
+  signature:
+    offset: 0
+    hexcodes:
+    - 'c3abcdab'
+- description: MS Answer Wizard
+  mimes:
+  - application/applixware
+  extensions:
+  - aw
+  signature:
+    offset: 0
+    hexcodes:
+    - '8a0109000000e108'
+- description: MS audio compression manager driver
+  mimes: []
+  extensions:
+  - acm
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: MS C++ debugging symbols file
+  mimes:
+  - application/vnd.palm
+  - x-chemical/x-pdb
+  - chemical/x-pdb
+  extensions:
+  - pdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d6963726f736f667420432f432b2b20'
+- description: MS COFF relocatable object code
+  mimes:
+  - application/x-tgif
+  extensions:
+  - obj
+  signature:
+    offset: 0
+    hexcodes:
+    - '4c01'
+- description: MS Compiled HTML Help File
+  mimes:
+  - application/vnd.ms-htmlhelp
+  extensions:
+  - chi
+  - chm
+  signature:
+    offset: 0
+    hexcodes:
+    - '49545346'
+- description: MS Developer Studio project file
+  mimes: []
+  extensions:
+  - dsp
+  signature:
+    offset: 0
+    hexcodes:
+    - '23204d6963726f73'
+- description: MS Document Imaging file
+  mimes:
+  - image/vnd.ms-modi
+  extensions:
+  - mdi
+  signature:
+    offset: 0
+    hexcodes:
+    - '4550'
+- description: MS Exchange configuration file
+  mimes: []
+  extensions:
+  - ecf
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b47656e6572616c'
+- description: MS Fax Cover Sheet
+  mimes: []
+  extensions:
+  - cpe
+  signature:
+    offset: 0
+    hexcodes:
+    - '464158434f564552'
+- description: MS Office 2007 documents
+  mimes:
+  - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+  - application/vnd.openxmlformats-officedocument.presentationml.presentation
+  - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  extensions:
+  - docx
+  - pptx
+  - xlsx
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b030414000600'
+- description: MS Office Open XML Format Document
+  mimes:
+  - application/vnd.openxmlformats-officedocument.wordprocessingml.document
+  - application/vnd.openxmlformats-officedocument.presentationml.presentation
+  - application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+  extensions:
+  - docx
+  - pptx
+  - xlsx
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: MS OneNote note
+  mimes: []
+  extensions:
+  - one
+  signature:
+    offset: 0
+    hexcodes:
+    - 'e4525c7b8cd8a74d'
+- description: MS Publisher
+  mimes: []
+  extensions:
+  - bdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '5854'
+- description: MS Publisher file
+  mimes:
+  - application/x-mspublisher
+  extensions:
+  - pub
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: MS Publisher file subheader
+  mimes:
+  - application/x-mspublisher
+  extensions:
+  - pub
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff02'
+- description: MS Publisher subheader
+  mimes:
+  - application/x-mspublisher
+  extensions:
+  - pub
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fd377a585a00'
+- description: MS Reader eBook
+  mimes: []
+  extensions:
+  - lit
+  signature:
+    offset: 0
+    hexcodes:
+    - '49544f4c49544c53'
+- description: MS security catalog file
+  mimes:
+  - application/vnd.ms-pki.seccat
+  extensions:
+  - cat
+  signature:
+    offset: 0
+    hexcodes:
+    - '30'
+- description: MS Visual Studio workspace file
+  mimes: []
+  extensions:
+  - dsw
+  signature:
+    offset: 0
+    hexcodes:
+    - '64737766696c65'
+- description: MS Windows journal
+  mimes: []
+  extensions:
+  - jnt
+  - jtp
+  signature:
+    offset: 0
+    hexcodes:
+    - '4e422a00'
+- description: MS WinMobile personal note
+  mimes: []
+  extensions:
+  - pwi
+  signature:
+    offset: 0
+    hexcodes:
+    - '7b5c707769'
+- description: MS Write file_1
+  mimes:
+  - application/x-mswrite
+  extensions:
+  - wri
+  signature:
+    offset: 0
+    hexcodes:
+    - '31be'
+- description: MS Write file_2
+  mimes:
+  - application/x-mswrite
+  extensions:
+  - wri
+  signature:
+    offset: 0
+    hexcodes:
+    - '32be'
+- description: MS Write file_3
+  mimes:
+  - application/x-mswrite
+  extensions:
+  - wri
+  signature:
+    offset: 0
+    hexcodes:
+    - 'be000000ab'
+- description: MSinfo file
+  mimes: []
+  extensions:
+  - mof
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fffe23006c006900'
+- description: MSWorks database file
+  mimes: []
+  extensions:
+  - db
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: MSWorks text document
+  mimes:
+  - application/vnd.ms-works
+  extensions:
+  - wps
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: MultiBit Bitcoin blockchain file
+  mimes: []
+  extensions:
+  - spvb
+  signature:
+    offset: 0
+    hexcodes:
+    - '53505642'
+- description: MultiBit Bitcoin wallet file
+  mimes: []
+  extensions:
+  - wallet
+  signature:
+    offset: 0
+    hexcodes:
+    - '0a166f72672e626974636f696e2e7072'
+- description: MultiBit Bitcoin wallet information
+  mimes: []
+  extensions:
+  - info
+  signature:
+    offset: 0
+    hexcodes:
+    - '6d756c74694269742e696e666f'
+- description: National Imagery Transmission Format file
+  mimes:
+  - application/vnd.nitf
+  extensions:
+  - ntf
+  signature:
+    offset: 0
+    hexcodes:
+    - '4e49544630'
+- description: National Transfer Format Map
+  mimes:
+  - application/vnd.nitf
+  extensions:
+  - ntf
+  signature:
+    offset: 0
+    hexcodes:
+    - '30314f52444e414e'
+- description: NAV quarantined virus file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cd20aaaa02000000'
+- description: Nero CD compilation
+  mimes: []
+  extensions:
+  - nri
+  signature:
+    offset: 0
+    hexcodes:
+    - '0e4e65726f49534f'
+- description: NES Sound file
+  mimes:
+  - application/vnd.lotus-notes
+  extensions:
+  - nsf
+  signature:
+    offset: 0
+    hexcodes:
+    - '4e45534d1a01'
+- description: Netscape Communicator (v4) mail folder
+  mimes: []
+  extensions:
+  - snm
+  signature:
+    offset: 0
+    hexcodes:
+    - '001e849000000000'
+- description: Netscape Navigator (v4) database
+  mimes: []
+  extensions:
+  - db
+  signature:
+    offset: 0
+    hexcodes:
+    - '0006156100000002000004d200001000'
+- description: NeXT|Sun Microsystems audio file
+  mimes:
+  - audio/basic
+  extensions:
+  - au
+  signature:
+    offset: 0
+    hexcodes:
+    - '2e736e64'
+- description: Norton Disk Doctor undo file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '504e4349554e444f'
+- description: Novell LANalyzer capture file
+  mimes: []
+  extensions:
+  - tr1
+  signature:
+    offset: 0
+    hexcodes:
+    - '0110'
+- description: NTFS MFT (BAAD)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '42414144'
+- description: NTFS MFT (FILE)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '46494c45'
+- description: Ogg Vorbis Codec compressed file
+  mimes:
+  - audio/ogg
+  - video/ogg
+  - application/ogg
+  extensions:
+  - oga
+  - ogg
+  - ogv
+  - ogx
+  signature:
+    offset: 0
+    hexcodes:
+    - '4f67675300020000'
+- description: OLE object library
+  mimes: []
+  extensions:
+  - olb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: OLE|SPSS|Visual C++ library file
+  mimes: []
+  extensions:
+  - tlb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d53465402000100'
+- description: Open Publication Structure eBook
+  mimes:
+  - application/epub+zip
+  extensions:
+  - epub
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b03040a000200'
+- description: OpenDocument template
+  mimes:
+  - application/vnd.oasis.opendocument.text
+  - application/vnd.oasis.opendocument.presentation
+  - application/vnd.oasis.opendocument.text-template
+  extensions:
+  - odt
+  - odp
+  - ott
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: OpenEXR bitmap image
+  mimes: []
+  extensions:
+  - exr
+  signature:
+    offset: 0
+    hexcodes:
+    - '762f3101'
+- description: OpenOffice documents
+  mimes:
+  - application/vnd.sun.xml.calc
+  - application/vnd.sun.xml.draw
+  - application/vnd.sun.xml.impress
+  - application/vnd.sun.xml.writer
+  extensions:
+  - sxc
+  - sxd
+  - sxi
+  - sxw
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: OS X ABI Mach-O binary (32-bit reverse)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cefaedfe'
+- description: OS X ABI Mach-O binary (32-bit)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'feedface'
+- description: OS X ABI Mach-O binary (64-bit reverse)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cffaedfe'
+- description: OS X ABI Mach-O binary (64-bit)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'feedfacf'
+- description: Outlook address file
+  mimes: []
+  extensions:
+  - wab
+  signature:
+    offset: 0
+    hexcodes:
+    - '9ccbcb8d1375d211'
+- description: Outlook Express address book (Win95)
+  mimes: []
+  extensions:
+  - wab
+  signature:
+    offset: 0
+    hexcodes:
+    - '813284c18505d011'
+- description: Outlook Express e-mail folder
+  mimes: []
+  extensions:
+  - dbx
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cfad12fe'
+- description: Packet sniffer files
+  mimes:
+  - application/vnd.tcpdump.pcap
+  extensions:
+  - cap
+  signature:
+    offset: 0
+    hexcodes:
+    - '58435000'
+- description: Palm Address Book Archive
+  mimes: []
+  extensions:
+  - aba
+  signature:
+    offset: 0
+    hexcodes:
+    - '00014241'
+- description: Palm DateBook Archive
+  mimes: []
+  extensions:
+  - dba
+  signature:
+    offset: 0
+    hexcodes:
+    - '00014244'
+- description: Palm Desktop DateBook
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - 'bebafeca0f50616c6d53472044617461'
+- description: Palm Zire photo database
+  mimes: []
+  extensions:
+  - db
+  signature:
+    offset: 0
+    hexcodes:
+    - '44424648'
+- description: PalmOS SuperMemo
+  mimes:
+  - application/vnd.palm
+  - x-chemical/x-pdb
+  - chemical/x-pdb
+  extensions:
+  - pdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '736d5f'
+- description: Palmpilot resource file
+  mimes:
+  - application/x-mobipocket-ebook
+  - application/vnd.palm
+  extensions:
+  - prc
+  signature:
+    offset: 0
+    hexcodes:
+    - '424f4f4b4d4f4249'
+- description: PathWay Map file
+  mimes:
+  - application/x-mobipocket-ebook
+  - application/vnd.palm
+  extensions:
+  - prc
+  signature:
+    offset: 60
+    hexcodes:
+    - '74424d504b6e5772'
+- description: PAX password protected bitmap
+  mimes: []
+  extensions:
+  - pax
+  signature:
+    offset: 0
+    hexcodes:
+    - '504158'
+- description: PCX bitmap
+  mimes: []
+  extensions:
+  - dcx
+  signature:
+    offset: 0
+    hexcodes:
+    - 'b168de3a'
+- description: PDF file
+  mimes:
+  - application/pdf
+  - application/vnd.fdf
+  extensions:
+  - pdf
+  - fdf
+  signature:
+    offset: 0
+    hexcodes:
+    - '25504446'
+- description: Perfect Office document
+  mimes:
+  - application/msword
+  - application/x-msword
+  - application/word
+  - application/x-word
+  - text/plain
+  extensions:
+  - doc
+  signature:
+    offset: 0
+    hexcodes:
+    - 'cf11e0a1b11ae100'
+- description: PestPatrol data|scan strings
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '50455354'
+- description: PGP disk image
+  mimes: []
+  extensions:
+  - pgd
+  signature:
+    offset: 0
+    hexcodes:
+    - '504750644d41494e'
+- description: PGP public keyring
+  mimes: []
+  extensions:
+  - pkr
+  signature:
+    offset: 0
+    hexcodes:
+    - '9901'
+- description: PGP secret keyring_1
+  mimes: []
+  extensions:
+  - skr
+  signature:
+    offset: 0
+    hexcodes:
+    - '9500'
+- description: PGP secret keyring_2
+  mimes: []
+  extensions:
+  - skr
+  signature:
+    offset: 0
+    hexcodes:
+    - '9501'
+- description: Photoshop Custom Shape
+  mimes:
+  - application/x-csh
+  extensions:
+  - csh
+  signature:
+    offset: 0
+    hexcodes:
+    - '6375736800000002'
+- description: Photoshop image
+  mimes:
+  - image/vnd.adobe.photoshop
+  extensions:
+  - psd
+  signature:
+    offset: 0
+    hexcodes:
+    - '38425053'
+- description: PKLITE archive
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 30
+    hexcodes:
+    - '504b4c495445'
+- description: PKSFX self-extracting archive
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 526
+    hexcodes:
+    - '504b537058'
+- description: PKZIP archive_1
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: PKZIP archive_2
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0506'
+- description: PKZIP archive_3
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0708'
+- description: PNG image
+  mimes:
+  - image/png
+  extensions:
+  - png
+  signature:
+    offset: 0
+    hexcodes:
+    - '89504e470d0a1a0a'
+- description: Portable Graymap Graphic
+  mimes:
+  - image/x-portable-graymap
+  extensions:
+  - pgm
+  signature:
+    offset: 0
+    hexcodes:
+    - '50350a'
+- description: PowerBASIC Debugger Symbols
+  mimes:
+  - application/vnd.palm
+  - x-chemical/x-pdb
+  - chemical/x-pdb
+  extensions:
+  - pdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '737a657a'
+- description: Powerpoint Packaged Presentation
+  mimes: []
+  extensions:
+  - ppz
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d534346'
+- description: PowerPoint presentation subheader_1
+  mimes:
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  extensions:
+  - ppt
+  signature:
+    offset: 512
+    hexcodes:
+    - '006e1ef0'
+- description: PowerPoint presentation subheader_2
+  mimes:
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  extensions:
+  - ppt
+  signature:
+    offset: 512
+    hexcodes:
+    - '0f00e803'
+- description: PowerPoint presentation subheader_3
+  mimes:
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  extensions:
+  - ppt
+  signature:
+    offset: 512
+    hexcodes:
+    - 'a0461df0'
+- description: PowerPoint presentation subheader_4
+  mimes:
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  extensions:
+  - ppt
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff0e000000'
+- description: PowerPoint presentation subheader_5
+  mimes:
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  extensions:
+  - ppt
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff1c000000'
+- description: PowerPoint presentation subheader_6
+  mimes:
+  - application/powerpoint
+  - application/vnd.ms-powerpoint
+  extensions:
+  - ppt
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff43000000'
+- description: Psion Series 3 Database
+  mimes: []
+  extensions:
+  - dbf
+  signature:
+    offset: 0
+    hexcodes:
+    - '4f504c4461746162'
+- description: Puffer ASCII encrypted archive
+  mimes: []
+  extensions:
+  - apuf
+  signature:
+    offset: 0
+    hexcodes:
+    - '426567696e20507566666572'
+- description: Puffer encrypted archive
+  mimes: []
+  extensions:
+  - puf
+  signature:
+    offset: 0
+    hexcodes:
+    - '50554658'
+- description: QBASIC SZDD file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '535a2088f02733d1'
+- description: Qcow Disk Image
+  mimes: []
+  extensions:
+  - qemu
+  signature:
+    offset: 0
+    hexcodes:
+    - '514649'
+- description: Qimage filter
+  mimes: []
+  extensions:
+  - flt
+  signature:
+    offset: 0
+    hexcodes:
+    - '76323030332e3130'
+- description: Quake archive file
+  mimes: []
+  extensions:
+  - pak
+  signature:
+    offset: 0
+    hexcodes:
+    - '5041434b'
+- description: Quark Express (Intel)
+  mimes:
+  - application/vnd.Quark.QuarkXPress
+  extensions:
+  - qxd
+  signature:
+    offset: 0
+    hexcodes:
+    - '00004949585052'
+- description: Quark Express (Motorola)
+  mimes:
+  - application/vnd.Quark.QuarkXPress
+  extensions:
+  - qxd
+  signature:
+    offset: 0
+    hexcodes:
+    - '00004d4d585052'
+- description: Quatro Pro for Windows 7.0
+  mimes: []
+  extensions:
+  - wb3
+  signature:
+    offset: 24
+    hexcodes:
+    - '3e000300feff090006'
+- description: QuattroPro spreadsheet
+  mimes: []
+  extensions:
+  - wb2
+  signature:
+    offset: 0
+    hexcodes:
+    - '00000200'
+- description: QuickBooks backup
+  mimes: []
+  extensions:
+  - qbb
+  signature:
+    offset: 0
+    hexcodes:
+    - '458600000600'
+- description: Quicken data file
+  mimes: []
+  extensions:
+  - abd
+  - qsd
+  signature:
+    offset: 0
+    hexcodes:
+    - '5157205665722e20'
+- description: Quicken data
+  mimes: []
+  extensions:
+  - qdf
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ac9ebd8f0000'
+- description: Quicken data
+  mimes: []
+  extensions:
+  - qel
+  signature:
+    offset: 92
+    hexcodes:
+    - '51454c20'
+- description: Quicken price history
+  mimes: []
+  extensions:
+  - qph
+  signature:
+    offset: 0
+    hexcodes:
+    - '03000000'
+- description: Quicken QuickFinder Information File
+  mimes: []
+  extensions:
+  - idx
+  signature:
+    offset: 0
+    hexcodes:
+    - '5000000020000000'
+- description: QuickTime movie_1
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '6d6f6f76'
+- description: QuickTime movie_2
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '66726565'
+- description: QuickTime movie_3
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '6d646174'
+- description: QuickTime movie_4
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '77696465'
+- description: QuickTime movie_5
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '706e6f74'
+- description: QuickTime movie_6
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '736b6970'
+- description: QuickTime movie_7
+  mimes:
+  - video/quicktime
+  extensions:
+  - mov
+  signature:
+    offset: 4
+    hexcodes:
+    - '6674797071742020'
+- description: Radiance High Dynamic Range image file
+  mimes: []
+  extensions:
+  - hdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '233f52414449414e'
+- description: RagTime document
+  mimes: []
+  extensions:
+  - rtd
+  signature:
+    offset: 0
+    hexcodes:
+    - '43232b44a4434da5'
+- description: RealAudio file
+  mimes:
+  - audio/x-pn-realaudio
+  - audio/x-realaudio
+  extensions:
+  - ra
+  signature:
+    offset: 0
+    hexcodes:
+    - '2e524d4600000012'
+- description: RealAudio streaming media
+  mimes:
+  - audio/x-pn-realaudio
+  - audio/x-realaudio
+  extensions:
+  - ra
+  signature:
+    offset: 0
+    hexcodes:
+    - '2e7261fd00'
+- description: RealMedia metafile
+  mimes:
+  - audio/x-pn-realaudio
+  extensions:
+  - ram
+  signature:
+    offset: 0
+    hexcodes:
+    - '727473703a2f2f'
+- description: RealMedia streaming media
+  mimes:
+  - application/vnd.rn-realmedia
+  - application/vnd.rn-realmedia-vbr
+  extensions:
+  - rm
+  - rmvb
+  signature:
+    offset: 0
+    hexcodes:
+    - '2e524d46'
+- description: RealPlayer video file (V11+)
+  mimes: []
+  extensions:
+  - ivr
+  signature:
+    offset: 0
+    hexcodes:
+    - '2e524543'
+- description: RedHat Package Manager
+  mimes:
+  - audio/x-pn-realaudio-plugin
+  extensions:
+  - rpm
+  signature:
+    offset: 0
+    hexcodes:
+    - 'edabeedb'
+- description: Relocatable object code
+  mimes:
+  - application/x-tgif
+  extensions:
+  - obj
+  signature:
+    offset: 0
+    hexcodes:
+    - '80'
+- description: Resource Interchange File Format
+  mimes:
+  - video/x-msvideo
+  - audio/vnd.qcelp
+  - audio/midi
+  - audio/x-wav
+  extensions:
+  - avi
+  - cda
+  - qcp
+  - rmi
+  - wav
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: Revit Project file
+  mimes: []
+  extensions:
+  - rvt
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: RTF file
+  mimes:
+  - application/rtf
+  - application/x-rtf
+  - text/rtf
+  - text/x-rtf
+  extensions:
+  - rtf
+  signature:
+    offset: 0
+    hexcodes:
+    - '7b5c72746631'
+- description: Runtime Software disk image
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a52545320434f4d'
+- description: SAS Transport dataset
+  mimes: []
+  extensions:
+  - xpt
+  signature:
+    offset: 0
+    hexcodes:
+    - '484541444552205245434f52442a2a2a'
+- description: Screen saver
+  mimes: []
+  extensions:
+  - scr
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: Shareaza (P2P) thumbnail
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '52415a4154444231'
+- description: Shockwave Flash file
+  mimes:
+  - application/x-shockwave-flash
+  extensions:
+  - swf
+  signature:
+    offset: 0
+    hexcodes:
+    - '435753'
+- description: Shockwave Flash player
+  mimes:
+  - application/x-shockwave-flash
+  extensions:
+  - swf
+  signature:
+    offset: 0
+    hexcodes:
+    - '465753'
+- description: Show Partner graphics file
+  mimes: []
+  extensions:
+  - gx2
+  signature:
+    offset: 0
+    hexcodes:
+    - '475832'
+- description: Sietronics CPI XRD document
+  mimes: []
+  extensions:
+  - cpi
+  signature:
+    offset: 0
+    hexcodes:
+    - '53494554524f4e49'
+- description: Silicon Graphics RGB Bitmap
+  mimes:
+  - image/x-rgb
+  extensions:
+  - rgb
+  signature:
+    offset: 0
+    hexcodes:
+    - '01da01010003'
+- description: SkinCrafter skin
+  mimes: []
+  extensions:
+  - skf
+  signature:
+    offset: 0
+    hexcodes:
+    - '07534b46'
+- description: Skype localization data file
+  mimes: []
+  extensions:
+  - mls
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d4c5357'
+- description: Skype user data file
+  mimes: []
+  extensions:
+  - dbb
+  signature:
+    offset: 0
+    hexcodes:
+    - '6c33336c'
+- description: SmartDraw Drawing file
+  mimes: []
+  extensions:
+  - sdr
+  signature:
+    offset: 0
+    hexcodes:
+    - '534d415254445257'
+- description: SMPTE DPX (big endian)
+  mimes: []
+  extensions:
+  - sdpx
+  signature:
+    offset: 0
+    hexcodes:
+    - '53445058'
+- description: SMPTE DPX file (little endian)
+  mimes: []
+  extensions:
+  - dpx
+  signature:
+    offset: 0
+    hexcodes:
+    - '58504453'
+- description: SMS text (SIM)
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '6f3c'
+- description: Sonic Foundry Acid Music File
+  mimes:
+  - application/pkix-attr-cert
+  extensions:
+  - ac
+  signature:
+    offset: 0
+    hexcodes:
+    - '72696666'
+- description: Sony Compressed Voice File
+  mimes: []
+  extensions:
+  - cdr
+  - dvf
+  - msv
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d535f564f494345'
+- description: Speedtouch router firmware
+  mimes:
+  - application/x-mac
+  - application/x-macbase64
+  - application/octet-stream
+  extensions:
+  - bin
+  - bli
+  - rbi
+  signature:
+    offset: 0
+    hexcodes:
+    - '424c49323233'
+- description: Sprint Music Store audio
+  mimes: []
+  extensions:
+  - koz
+  signature:
+    offset: 0
+    hexcodes:
+    - '49443303000000'
+- description: SPSS Data file
+  mimes:
+  - application/x-spss
+  extensions:
+  - sav
+  signature:
+    offset: 0
+    hexcodes:
+    - '24464c3240282329'
+- description: SPSS output file
+  mimes:
+  - application/x-spss
+  extensions:
+  - spo
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: SQL Data Base
+  mimes:
+  - application/access
+  - application/x-access
+  - application/x-msaccess
+  extensions:
+  - mdf
+  signature:
+    offset: 0
+    hexcodes:
+    - '010f0000'
+- description: SQLite database file
+  mimes: []
+  extensions:
+  - db
+  signature:
+    offset: 0
+    hexcodes:
+    - '53514c69746520666f726d6174203300'
+- description: StarOffice spreadsheet
+  mimes:
+  - application/vnd.sun.xml.calc
+  extensions:
+  - sxc
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: Steganos virtual secure drive
+  mimes: []
+  extensions:
+  - sle
+  signature:
+    offset: 0
+    hexcodes:
+    - '414376'
+- description: StorageCraft ShadownProtect backup file
+  mimes:
+  - application/vnd.yamaha.smaf-phrase
+  extensions:
+  - spf
+  signature:
+    offset: 0
+    hexcodes:
+    - '5350464900'
+- description: StuffIt archive
+  mimes:
+  - application/x-stuffit
+  extensions:
+  - sit
+  signature:
+    offset: 0
+    hexcodes:
+    - '5349542100'
+- description: StuffIt compressed archive
+  mimes:
+  - application/x-stuffit
+  extensions:
+  - sit
+  signature:
+    offset: 0
+    hexcodes:
+    - '5374756666497420'
+- description: SuperCalc worksheet
+  mimes: []
+  extensions:
+  - cal
+  signature:
+    offset: 0
+    hexcodes:
+    - '537570657243616c'
+- description: Surfplan kite project file
+  mimes: []
+  extensions:
+  - sle
+  signature:
+    offset: 0
+    hexcodes:
+    - '3a56455253494f4e'
+- description: Symantec Wise Installer log
+  mimes:
+  - text/plain
+  extensions:
+  - log
+  signature:
+    offset: 0
+    hexcodes:
+    - '2a2a2a2020496e73'
+- description: Symantex Ghost image file
+  mimes: []
+  extensions:
+  - gho
+  - ghs
+  signature:
+    offset: 0
+    hexcodes:
+    - 'feef'
+- description: SZDD file format
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '535a444488f02733'
+- description: Tape Archive
+  mimes:
+  - application/x-tar
+  extensions:
+  - tar
+  signature:
+    offset: 257
+    hexcodes:
+    - '7573746172'
+- description: TargetExpress target file
+  mimes: []
+  extensions:
+  - mte
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d435720546563686e6f676f6c696573'
+- description: tcpdump (libpcap) capture file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'a1b2c3d4'
+- description: Tcpdump capture file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '34cdb2a1'
+- description: Thumbs.db subheader
+  mimes: []
+  extensions:
+  - db
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff'
+- description: Thunderbird|Mozilla Mail Summary File
+  mimes:
+  - application/vnd.epson.msf
+  extensions:
+  - msf
+  signature:
+    offset: 0
+    hexcodes:
+    - '2f2f203c212d2d203c6d64623a6d6f726b3a7a'
+- description: TIFF file_1
+  mimes:
+  - image/tiff
+  extensions:
+  - tif
+  - tiff
+  signature:
+    offset: 0
+    hexcodes:
+    - '492049'
+- description: TIFF file_2
+  mimes:
+  - image/tiff
+  extensions:
+  - tif
+  - tiff
+  signature:
+    offset: 0
+    hexcodes:
+    - '49492a00'
+- description: TIFF file_3
+  mimes:
+  - image/tiff
+  extensions:
+  - tif
+  - tiff
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d4d002a'
+- description: TIFF file_4
+  mimes:
+  - image/tiff
+  extensions:
+  - tif
+  - tiff
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d4d002b'
+- description: TomTom traffic data
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '4e41565452414646'
+- description: TrueType font file
+  mimes:
+  - application/font-sfnt
+  - application/x-font-truetype
+  - application/x-font-ttf
+  extensions:
+  - ttf
+  signature:
+    offset: 0
+    hexcodes:
+    - '0001000000'
+- description: UFA compressed archive
+  mimes: []
+  extensions:
+  - ufa
+  signature:
+    offset: 0
+    hexcodes:
+    - '554641c6d2c1'
+- description: UFO Capture map file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '55464f4f72626974'
+- description: Underground Audio
+  mimes: []
+  extensions:
+  - ast
+  signature:
+    offset: 0
+    hexcodes:
+    - '5343486c'
+- description: Unicode extensions
+  mimes: []
+  extensions:
+  - uce
+  signature:
+    offset: 0
+    hexcodes:
+    - '55434558'
+- description: Unix archiver (ar)|MS Program Library Common Object File Format (COFF)
+  mimes: []
+  extensions:
+  - lib
+  signature:
+    offset: 0
+    hexcodes:
+    - '213c617263683e0a'
+- description: User Interface Language
+  mimes:
+  - application/xml
+  - text/xml
+  extensions:
+  - xml
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c3f786d6c2076657273696f6e3d22312e30223f3e'
+- description: UTF-16|UCS-2 file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'feff'
+- description: UTF-32|UCS-2 file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fffe'
+- description: UTF-32|UCS-4 file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fffe0000'
+- description: UTF8 file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'efbbbf'
+- description: UUencoded BASE64 file
+  mimes: []
+  extensions:
+  - b64
+  signature:
+    offset: 0
+    hexcodes:
+    - '626567696e2d626173653634'
+- description: UUencoded file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '626567696e'
+- description: vCard
+  mimes:
+  - text/x-vcard
+  extensions:
+  - vcf
+  signature:
+    offset: 0
+    hexcodes:
+    - '424547494e3a5643'
+- description: Video CD MPEG movie
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: VideoVCD|VCDImager file
+  mimes:
+  - application/x-cdlink
+  extensions:
+  - vcd
+  signature:
+    offset: 0
+    hexcodes:
+    - '454e545259564344'
+- description: Virtual PC HD image
+  mimes: []
+  extensions:
+  - vhd
+  signature:
+    offset: 0
+    hexcodes:
+    - '636f6e6563746978'
+- description: Visio file
+  mimes:
+  - application/vnd.visio
+  extensions:
+  - vsd
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: Visio|DisplayWrite 4 text file
+  mimes: []
+  extensions:
+  - dw4
+  signature:
+    offset: 0
+    hexcodes:
+    - '4f7b'
+- description: Visual Basic User-defined Control file
+  mimes: []
+  extensions:
+  - ctl
+  signature:
+    offset: 0
+    hexcodes:
+    - '56455253494f4e20'
+- description: Visual C PreCompiled header
+  mimes: []
+  extensions:
+  - pch
+  signature:
+    offset: 0
+    hexcodes:
+    - '564350434830'
+- description: Visual C++ Workbench Info File
+  mimes: []
+  extensions:
+  - vcw
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b4d535643'
+- description: Visual Studio .NET file
+  mimes: []
+  extensions:
+  - sln
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d6963726f736f66742056697375616c'
+- description: Visual Studio Solution subheader
+  mimes: []
+  extensions:
+  - suo
+  signature:
+    offset: 512
+    hexcodes:
+    - 'fdffffff04'
+- description: Visual Studio Solution User Options file
+  mimes: []
+  extensions:
+  - sou
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd0cf11e0a1b11ae1'
+- description: VisualBASIC application
+  mimes: []
+  extensions:
+  - vbx
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: VLC Player Skin file
+  mimes: []
+  extensions:
+  - vlt
+  signature:
+    offset: 0
+    hexcodes:
+    - '1f8b08'
+- description: VMapSource GPS Waypoint Database
+  mimes: []
+  extensions:
+  - gdb
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d73526366'
+- description: VMware 3 Virtual Disk
+  mimes: []
+  extensions:
+  - vmdk
+  signature:
+    offset: 0
+    hexcodes:
+    - '434f5744'
+- description: VMware 4 Virtual Disk description
+  mimes: []
+  extensions:
+  - vmdk
+  signature:
+    offset: 0
+    hexcodes:
+    - '23204469736b2044'
+- description: VMware 4 Virtual Disk
+  mimes: []
+  extensions:
+  - vmdk
+  signature:
+    offset: 0
+    hexcodes:
+    - '4b444d'
+- description: VMware BIOS state file
+  mimes: []
+  extensions:
+  - nvram
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d52564e'
+- description: VocalTec VoIP media file
+  mimes: []
+  extensions:
+  - vmd
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b564d445d'
+- description: Walkman MP3 file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '574d4d50'
+- description: WebM video file
+  mimes:
+  - audio/webm
+  - video/webm
+  extensions:
+  - webm
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a45dfa3'
+- description: WhereIsIt Catalog
+  mimes: []
+  extensions:
+  - ctf
+  signature:
+    offset: 0
+    hexcodes:
+    - '436174616c6f6720'
+- description: Win Server 2003 printer spool file
+  mimes: []
+  extensions:
+  - shd
+  signature:
+    offset: 0
+    hexcodes:
+    - '68490000'
+- description: Win2000|XP printer spool file
+  mimes: []
+  extensions:
+  - shd
+  signature:
+    offset: 0
+    hexcodes:
+    - '67490000'
+- description: Win95 password file
+  mimes: []
+  extensions:
+  - pwl
+  signature:
+    offset: 0
+    hexcodes:
+    - 'b04d4643'
+- description: Win98 password file
+  mimes: []
+  extensions:
+  - pwl
+  signature:
+    offset: 0
+    hexcodes:
+    - 'e3828596'
+- description: Win9x printer spool file
+  mimes: []
+  extensions:
+  - shd
+  signature:
+    offset: 0
+    hexcodes:
+    - '4b490000'
+- description: Win9x registry hive
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '43524547'
+- description: WinAmp Playlist
+  mimes:
+  - application/pls+xml
+  extensions:
+  - pls
+  signature:
+    offset: 0
+    hexcodes:
+    - '5b706c61796c6973745d'
+- description: Windows animated cursor
+  mimes:
+  - application/octet-stream
+  extensions:
+  - ani
+  signature:
+    offset: 0
+    hexcodes:
+    - '52494646'
+- description: Windows application log
+  mimes: []
+  extensions:
+  - lgc
+  - lgd
+  signature:
+    offset: 0
+    hexcodes:
+    - '7b0d0a6f20'
+- description: Windows calendar
+  mimes: []
+  extensions:
+  - cal
+  signature:
+    offset: 0
+    hexcodes:
+    - 'b5a2b0b3b3b0a5b5'
+- description: Windows cursor
+  mimes: []
+  extensions:
+  - cur
+  signature:
+    offset: 0
+    hexcodes:
+    - '00000200'
+- description: Windows dump file
+  mimes:
+  - application/vnd.tcpdump.pcap
+  extensions:
+  - dmp
+  - hdmp
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d444d5093a7'
+- description: Windows Event Viewer file
+  mimes: []
+  extensions:
+  - evt
+  signature:
+    offset: 0
+    hexcodes:
+    - '300000004c664c65'
+- description: Windows executable file_1
+  mimes:
+  - application/x-msdos-program
+  - application/x-msdownload
+  extensions:
+  - com
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - 'e8'
+- description: Windows executable file_2
+  mimes:
+  - application/x-msdos-program
+  - application/x-msdownload
+  extensions:
+  - com
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - 'e9'
+- description: Windows executable file_3
+  mimes:
+  - application/x-msdos-program
+  - application/x-msdownload
+  extensions:
+  - com
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - 'eb'
+- description: Windows executable
+  mimes: []
+  extensions:
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ff'
+- description: Windows graphics metafile
+  mimes:
+  - application/x-msmetafile
+  extensions:
+  - wmf
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd7cdc69a'
+- description: Windows Help file_1
+  mimes:
+  - application/winhlp
+  - text/plain
+  extensions:
+  - hlp
+  signature:
+    offset: 6
+    hexcodes:
+    - '0000ffffffff'
+- description: Windows Help file_2
+  mimes:
+  - application/winhlp
+  - text/plain
+  extensions:
+  - gid
+  - hlp
+  signature:
+    offset: 0
+    hexcodes:
+    - '3f5f0300'
+- description: Windows help file_3
+  mimes:
+  - application/winhlp
+  - text/plain
+  extensions:
+  - gid
+  - hlp
+  signature:
+    offset: 0
+    hexcodes:
+    - '4c4e0200'
+- description: Windows icon|printer spool file
+  mimes:
+  - image/x-icon
+  - image/vnd.microsoft.icon
+  - application/x-futuresplash
+  - application/futuresplash
+  extensions:
+  - ico
+  - spl
+  signature:
+    offset: 0
+    hexcodes:
+    - '00000100'
+- description: Windows international code page
+  mimes: []
+  extensions:
+  - cpi
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ff464f4e54'
+- description: Windows Media Audio|Video File
+  mimes:
+  - application/vnd.ms-asf
+  - video/x-ms-asf
+  - audio/x-ms-wma
+  - audio/x-ms-wmv
+  - video/x-ms-wmv
+  extensions:
+  - asf
+  - wma
+  - wmv
+  signature:
+    offset: 0
+    hexcodes:
+    - '3026b2758e66cf11'
+- description: Windows Media compressed skin file
+  mimes:
+  - application/x-ms-wmz
+  - application/x-msmetafile
+  extensions:
+  - wmz
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: Windows Media Player playlist
+  mimes:
+  - application/vnd.ms-wpl
+  extensions:
+  - wpl
+  signature:
+    offset: 84
+    hexcodes:
+    - '4d6963726f736f66742057696e646f7773204d6564696120506c61796572202d2d20'
+- description: Windows memory dump
+  mimes:
+  - application/vnd.tcpdump.pcap
+  extensions:
+  - dmp
+  signature:
+    offset: 0
+    hexcodes:
+    - '504147454455'
+- description: Windows prefetch file
+  mimes: []
+  extensions:
+  - pf
+  signature:
+    offset: 0
+    hexcodes:
+    - '1100000053434341'
+- description: Windows Program Manager group file
+  mimes: []
+  extensions:
+  - grp
+  signature:
+    offset: 0
+    hexcodes:
+    - '504d4343'
+- description: Windows Registry file
+  mimes:
+  - application/x-msdos-program
+  - application/x-msdownload
+  extensions:
+  - reg
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fffe'
+- description: Windows shortcut file
+  mimes:
+  - application/x-ms-shortcut
+  extensions:
+  - lnk
+  signature:
+    offset: 0
+    hexcodes:
+    - '4c00000001140200'
+- description: Windows virtual device drivers
+  mimes: []
+  extensions:
+  - vxd
+  - '386'
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: Windows Vista event log
+  mimes: []
+  extensions:
+  - evtx
+  signature:
+    offset: 0
+    hexcodes:
+    - '456c6646696c6500'
+- description: Windows Visual Stylesheet
+  mimes:
+  - text/cache-manifest
+  extensions:
+  - manifest
+  signature:
+    offset: 0
+    hexcodes:
+    - '3c3f786d6c2076657273696f6e3d'
+- description: Windows|DOS executable file
+  mimes:
+  - application/x-msdos-program
+  - application/x-msdownload
+  - application/octet-stream
+  extensions:
+  - com
+  - dll
+  - drv
+  - exe
+  - pif
+  - qts
+  - qtx
+  - sys
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a'
+- description: WinDump (winpcap) capture file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd4c3b2a1'
+- description: WinNT Netmon capture file
+  mimes:
+  - application/vnd.tcpdump.pcap
+  extensions:
+  - cap
+  signature:
+    offset: 0
+    hexcodes:
+    - '52545353'
+- description: WinNT printer spool file
+  mimes: []
+  extensions:
+  - shd
+  signature:
+    offset: 0
+    hexcodes:
+    - '66490000'
+- description: WinNT registry file
+  mimes:
+  - text/plain
+  extensions:
+  - dat
+  signature:
+    offset: 0
+    hexcodes:
+    - '72656766'
+- description: WinNT Registry|Registry Undo files
+  mimes:
+  - application/x-msdos-program
+  - application/x-msdownload
+  extensions:
+  - reg
+  - sud
+  signature:
+    offset: 0
+    hexcodes:
+    - '52454745444954'
+- description: WinPharoah capture file
+  mimes: []
+  extensions:
+  - eth
+  signature:
+    offset: 0
+    hexcodes:
+    - '1a350100'
+- description: WinPharoah filter file
+  mimes: []
+  extensions:
+  - ftr
+  signature:
+    offset: 0
+    hexcodes:
+    - 'd20a0000'
+- description: WinRAR compressed archive
+  mimes:
+  - application/x-rar-compressed
+  extensions:
+  - rar
+  signature:
+    offset: 0
+    hexcodes:
+    - '526172211a0700'
+- description: WinZip compressed archive
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 29152
+    hexcodes:
+    - '57696e5a6970'
+- description: Word 2.0 file
+  mimes:
+  - application/msword
+  - application/x-msword
+  - application/word
+  - application/x-word
+  - text/plain
+  extensions:
+  - doc
+  signature:
+    offset: 0
+    hexcodes:
+    - 'dba52d00'
+- description: Word document subheader
+  mimes:
+  - application/msword
+  - application/x-msword
+  - application/word
+  - application/x-word
+  - text/plain
+  extensions:
+  - doc
+  signature:
+    offset: 512
+    hexcodes:
+    - 'eca5c100'
+- description: WordPerfect dictionary
+  mimes: []
+  extensions:
+  - cbd
+  signature:
+    offset: 0
+    hexcodes:
+    - '434246494c45'
+- description: WordPerfect text and graphics
+  mimes:
+  - application/wordperfect
+  - application/x-wordperfect
+  - application/wordperfect5.1
+  - application/vnd.wordperfect
+  - application/wordperfectd
+  - application/x-wordperfectd
+  - application/x-wordperfect6.1
+  - application/wordperfect6.1
+  extensions:
+  - wp
+  - wpd
+  - wpg
+  - wpp
+  - wp5
+  - wp6
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ff575043'
+- description: WordPerfect text
+  mimes: []
+  extensions:
+  - wpf
+  signature:
+    offset: 0
+    hexcodes:
+    - '81cdab'
+- description: WordStar for Windows file
+  mimes: []
+  extensions:
+  - ws2
+  signature:
+    offset: 0
+    hexcodes:
+    - '575332303030'
+- description: WordStar Version 5.0|6.0 document
+  mimes: []
+  extensions:
+  - ws
+  signature:
+    offset: 0
+    hexcodes:
+    - '1d7d'
+- description: Works for Windows spreadsheet
+  mimes:
+  - application/lotus-123
+  - application/x-lotus-123
+  - application/vnd.lotus-1-2-3
+  - application/vnd.ms-works
+  extensions:
+  - wks
+  signature:
+    offset: 0
+    hexcodes:
+    - 'ff00020004040554'
+- description: XML paper specification file
+  mimes:
+  - application/vnd.ms-xpsdocument
+  extensions:
+  - xps
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b0304'
+- description: XPCOM libraries
+  mimes: []
+  extensions:
+  - xpt
+  signature:
+    offset: 0
+    hexcodes:
+    - '5850434f4d0a5479'
+- description: XZ archive
+  mimes:
+  - application/x-xz
+  extensions:
+  - xz
+  signature:
+    offset: 0
+    hexcodes:
+    - 'fd377a585a00'
+- description: Yamaha Synthetic music Mobile Application Format
+  mimes:
+  - application/vnd.smaf
+  extensions:
+  - mmf
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d4d4d440000'
+- description: zisofs compressed file
+  mimes: []
+  extensions:
+  - "(none)"
+  signature:
+    offset: 0
+    hexcodes:
+    - '37e45396c9dbd607'
+- description: ZLock Pro encrypted ZIP
+  mimes:
+  - application/zip
+  extensions:
+  - zip
+  signature:
+    offset: 0
+    hexcodes:
+    - '504b030414000100'
+- description: ZoneAlam data file
+  mimes: []
+  extensions:
+  - zap
+  signature:
+    offset: 0
+    hexcodes:
+    - '4d5a90000300000004000000ffff'
+- description: ZOO compressed archive
+  mimes: []
+  extensions:
+  - zoo
+  signature:
+    offset: 0
+    hexcodes:
+    - '5a4f4f20'
+- description: ZoomBrowser Image Index
+  mimes: []
+  extensions:
+  - info
+  signature:
+    offset: 0
+    hexcodes:
+    - '7a626578'
+- description: ZSOFT Paintbrush file_1
+  mimes:
+  - image/x-pcx
+  extensions:
+  - pcx
+  signature:
+    offset: 0
+    hexcodes:
+    - '0a020101'
+- description: ZSOFT Paintbrush file_2
+  mimes:
+  - image/x-pcx
+  extensions:
+  - pcx
+  signature:
+    offset: 0
+    hexcodes:
+    - '0a030101'
+- description: ZSOFT Paintbrush file_3
+  mimes:
+  - image/x-pcx
+  extensions:
+  - pcx
+  signature:
+    offset: 0
+    hexcodes:
+    - '0a050101'
